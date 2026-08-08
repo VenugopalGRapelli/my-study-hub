@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Study Hub</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+:root{--bg:#08111f;--card:rgba(255,255,255,.08);--border:rgba(255,255,255,.12);--muted:#aebbd0;--a:#7c5cff;--b:#19d3ae}
+body{margin:0;min-height:100vh;color:#f7f9fc;font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 10% 10%,rgba(124,92,255,.28),transparent 30%),radial-gradient(circle at 90% 20%,rgba(25,211,174,.18),transparent 28%),linear-gradient(135deg,#08111f,#0d1728 55%,#101a2d)}
+.navbar{background:rgba(8,17,31,.75);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.brand{font-weight:800}.hero{padding:70px 0 45px}.badgex{display:inline-flex;gap:8px;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.06);color:#dbe4f5}
+h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:900;line-height:.98;margin:20px 0}.gradient{background:linear-gradient(90deg,#fff,#9f8cff,#5ee7ca);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero>div>p{color:var(--muted);max-width:720px;font-size:1.08rem}
+.cardx{height:100%;padding:0 0 24px;border:1px solid var(--border);border-radius:22px;background:var(--card);backdrop-filter:blur(15px);transition:.25s;position:relative;overflow:hidden}
+.cardx img.card-img{width:100%;height:180px;object-fit:cover;display:block;border-radius:22px 22px 0 0;transition:transform .35s ease;}.cardx:hover img.card-img{transform:scale(1.04)}.card-content{padding:20px 24px 0}.cardx:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.3);box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.icon{width:58px;height:58px;display:grid;place-items:center;border-radius:17px;font-size:1.65rem;background:rgba(255,255,255,.09);margin-bottom:18px}.cardx h3{font-size:1.2rem;font-weight:750}.cardx img{cursor:pointer}.cardx p{color:var(--muted);font-size:.92rem;min-height:44px}.open{display:inline-flex;gap:7px;color:white;text-decoration:none;font-weight:700;margin-top:10px}.open:hover{color:#bdb2ff}
+.mission{margin-top:48px;padding:24px;border-radius:22px;border:1px solid var(--border);background:rgba(255,255,255,.06)}.progress{height:9px;background:rgba(255,255,255,.09)}.progress-bar{background:linear-gradient(90deg,var(--a),var(--b))}
+footer{text-align:center;color:#8290a8;padding:40px 0 28px}
+.top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border:1px solid var(--border);border-radius:50%;color:white;background:#141e30;display:none;z-index:10}.top.show{display:grid;place-items:center}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-dark sticky-top"><div class="container"><a class="navbar-brand brand" href="#"><i class="bi bi-stars"></i> My Study Hub</a><span class="navbar-text text-secondary d-none d-md-block">Learn • Practice • Grow</span></div></nav>
+<header class="hero"><div class="container">
+<span class="badgex"><i class="bi bi-lightning-charge-fill"></i>Your personal learning dashboard</span>
+<h1>Everything you need<br><span class="gradient">to keep learning.</span></h1>
+<p>Your frequently used study, coding, career and community links — organized into one clean dashboard. Click any card to open the respective website.</p>
+<div class="row g-4 mt-3">
+<div class="col-md-6 col-lg-4"><div class="cardx"><a target="_blank" rel="noopener" href="https://app.zoom.us/wc/9415113791/join?ref_from=launch&_x_zm_rtaid=sqRZK3D_SpiAGF6gMcT33g.1785975893876.2a7498b8ec434333cfd48d6be0c45a24&_x_zm_rhtaid=225&fromPWA=1&pwd=ZDVhdGIxMmduaW9QeGNDeUFHaG1uZz09"><img class="card-img" src="https://images.unsplash.com/photo-1588190342127-0b2d7f7f6b37?auto=format&fit=crop&w=1000&q=80" alt="Online video meeting"></a><div class="card-content"><div class="icon"><i class="bi bi-mic-fill"></i></div><h3>Chant with Gurudev</h3><p>Open your Zoom chanting session.</p><a class="open" target="_blank" rel="noopener" href="https://app.zoom.us/wc/9415113791/join?ref_from=launch&_x_zm_rtaid=sqRZK3D_SpiAGF6gMcT33g.1785975893876.2a7498b8ec434333cfd48d6be0c45a24&_x_zm_rhtaid=225&fromPWA=1&pwd=ZDVhdGIxMmduaW9QeGNDeUFHaG1uZz09">Join session <i class="bi bi-arrow-up-right"></i></a></div></div></div><div class="col-md-6 col-lg-4"><div class="cardx"><a target="_blank" rel="noopener" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-2"><img class="card-img" src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=1000&q=80" alt="Web development code on a screen"></a><div class="card-content"><div class="icon"><i class="bi bi-code-slash"></i></div><h3>Practice HTML & CSS</h3><p>Continue your FreeCodeCamp responsive web design practice.</p><a class="open" target="_blank" rel="noopener" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-2">Start practice <i class="bi bi-arrow-up-right"></i></a></div></div></div><div class="col-md-6 col-lg-4"><div class="cardx"><a target="_blank" rel="noopener" href="https://www.naukri.com/mnjuser/homepage"><img class="card-img" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80" alt="Professionals collaborating at work"></a><div class="card-content"><div class="icon"><i class="bi bi-briefcase-fill"></i></div><h3>Naukri</h3><p>Open your Naukri dashboard for jobs and applications.</p><a class="open" target="_blank" rel="noopener" href="https://www.naukri.com/mnjuser/homepage">Open Naukri <i class="bi bi-arrow-up-right"></i></a></div></div></div><div class="col-md-6 col-lg-4"><div class="cardx"><a target="_blank" rel="noopener" href="https://mail.google.com/mail/u/0/#inbox"><img class="card-img" src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=1000&q=80" alt="Email inbox concept"></a><div class="card-content"><div class="icon"><i class="bi bi-envelope-fill"></i></div><h3>My Gmail</h3><p>Quickly access your Gmail inbox.</p><a class="open" target="_blank" rel="noopener" href="https://mail.google.com/mail/u/0/#inbox">Open Gmail <i class="bi bi-arrow-up-right"></i></a></div></div></div><div class="col-md-6 col-lg-4"><div class="cardx"><a target="_blank" rel="noopener" href="https://placexpert.fortunecloudindia.com/student/dashboard/jobs"><img class="card-img" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80" alt="Career and job search"></a><div class="card-content"><div class="icon"><i class="bi bi-search"></i></div><h3>PlaceExpert</h3><p>Check your Fortune Cloud Technology student job dashboard.</p><a class="open" target="_blank" rel="noopener" href="https://placexpert.fortunecloudindia.com/student/dashboard/jobs">Open PlaceExpert <i class="bi bi-arrow-up-right"></i></a></div></div></div><div class="col-md-6 col-lg-4"><div class="cardx"><a target="_blank" rel="noopener" href="https://codeforces.com/group/MWSDmqGsZm/contest/219158"><img class="card-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80" alt="Competitive programming code"></a><div class="card-content"><div class="icon"><i class="bi bi-trophy-fill"></i></div><h3>Codeforces</h3><p>Practice competitive programming problems and contests.</p><a class="open" target="_blank" rel="noopener" href="https://codeforces.com/group/MWSDmqGsZm/contest/219158">Start coding <i class="bi bi-arrow-up-right"></i></a></div></div></div>
+</div>
+
+<div class="row g-4 mt-1">
+  <div class="col-md-6 col-lg-3">
+    <div class="cardx">
+      <a target="_blank" rel="noopener" href="https://www.youtube.com/">
+        <img class="card-img" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80" alt="YouTube">
+      </a>
+      <div class="card-content">
+        <div class="icon"><i class="bi bi-youtube"></i></div>
+        <h3>YouTube</h3>
+        <p>Open YouTube for tutorials, learning videos, and technology content.</p>
+        <a class="open" target="_blank" rel="noopener" href="https://www.youtube.com/">Open YouTube <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="cardx">
+      <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/venugopal-rapelli-a7a303243/">
+        <img class="card-img" src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?auto=format&fit=crop&w=1000&q=80" alt="LinkedIn">
+      </a>
+      <div class="card-content">
+        <div class="icon"><i class="bi bi-linkedin"></i></div>
+        <h3>LinkedIn</h3>
+        <p>Open your LinkedIn profile for networking and career opportunities.</p>
+        <a class="open" target="_blank" rel="noopener" href="https://www.linkedin.com/in/venugopal-rapelli-a7a303243/">Open LinkedIn <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="cardx">
+      <a target="_blank" rel="noopener" href="https://github.com/">
+        <img class="card-img" src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=1000&q=80" alt="GitHub">
+      </a>
+      <div class="card-content">
+        <div class="icon"><i class="bi bi-github"></i></div>
+        <h3>GitHub</h3>
+        <p>Open GitHub to manage repositories, projects, and source code.</p>
+        <a class="open" target="_blank" rel="noopener" href="https://github.com/">Open GitHub <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="cardx">
+      <a target="_blank" rel="noopener" href="https://aws.amazon.com/">
+        <img class="card-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80" alt="AWS Cloud">
+      </a>
+      <div class="card-content">
+        <div class="icon"><i class="bi bi-cloud-fill"></i></div>
+        <h3>AWS</h3>
+        <p>Open Amazon Web Services for cloud learning, services, and resources.</p>
+        <a class="open" target="_blank" rel="noopener" href="https://aws.amazon.com/">Open AWS <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mission"><div class="d-flex justify-content-between mb-2"><strong><i class="bi bi-rocket-takeoff"></i> Today's learning mission</strong><span id="pt">0%</span></div><div class="progress"><div id="pb" class="progress-bar" style="width:0%"></div></div><div class="d-flex justify-content-between mt-3 small text-secondary"><span>Practice</span><span>Coding</span><span>Job search</span></div></div>
+</div></header>
+<footer><div class="container"><i class="bi bi-stars"></i> Keep learning. Keep building. Keep moving forward.</div></footer>
+<button id="top" class="top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+<script>
+const links=document.querySelectorAll('.open'),pb=document.getElementById('pb'),pt=document.getElementById('pt'),done=new Set();
+links.forEach(x=>x.addEventListener('click',()=>{done.add(x.href);let n=Math.round(done.size/links.length*100);pb.style.width=n+'%';pt.textContent=n+'%'}));
+const top=document.getElementById('top');addEventListener('scroll',()=>top.classList.toggle('show',scrollY>400));top.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+</script>
+</body></html>
